@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GibberLink</title>
+    <style>
+      html, body, #root { height: 100%; margin: 0; background: #0b0b0d; color: #e5e7eb; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .center { display: flex; align-items: center; justify-content: center; height: 100%; }
+      .btn { border: 1px solid #5b5b5f; padding: 14px 28px; border-radius: 28px; cursor: pointer; background: transparent; color: #e5e7eb; }
+      .btn.primary { background: #7c3aed33; border-color: #7c3aed; }
+      .pill { width: 220px; height: 220px; background: radial-gradient(60% 60% at 50% 50%, #a78bfa55, #7c3aed88); border-radius: 9999px; box-shadow: 0 0 60px #7c3aed55; }
+      .bar { position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); }
+      .chat { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; height: 100%; padding: 16px; }
+      .pane { border: 1px solid #2a2a2e; border-radius: 12px; padding: 12px; background: #111113; display: flex; flex-direction: column; }
+      .messages { flex: 1; overflow: auto; }
+      .msg { padding: 8px 10px; margin: 6px 0; background: #1a1a1d; border-radius: 8px; }
+      .header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 8px; }
+      .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; }
+      .modal { background: #0e0e10; border: 1px solid #2a2a2e; border-radius: 12px; padding: 16px; width: 420px; }
+      input, textarea, select { width: 100%; background: #111113; color: #e5e7eb; border: 1px solid #2a2a2e; border-radius: 8px; padding: 10px; }
+      label { font-size: 12px; color: #9ca3af; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+  </html>
+
+
