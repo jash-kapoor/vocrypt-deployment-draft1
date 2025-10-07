@@ -17,11 +17,12 @@ app.use(express.json());
 
 const upload = multer({ storage: multer.memoryStorage() });
 
-// Absolute paths to built binaries (macOS build done earlier)
-const BIN_DIR = path.resolve('/Users/tanmayjain/Desktop/final/ggwave/build-macos/bin');
+// Resolve paths to built binaries relative to repository root
+const ROOT_DIR = path.resolve(__dirname, '../../..');
+const BIN_DIR = path.join(ROOT_DIR, 'ggwave', 'build-macos', 'bin');
 const TO_FILE = path.join(BIN_DIR, 'ggwave-to-file');
 const FROM_FILE = path.join(BIN_DIR, 'ggwave-from-file');
-const CLI_BIN = path.join('/Users/tanmayjain/Desktop/final/ggwave/build/bin', 'ggwave-cli');
+const CLI_BIN = path.join(ROOT_DIR, 'ggwave', 'build', 'bin', 'ggwave-cli');
 
 function ensureBinaryExists(filePath) {
   try {
